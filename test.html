@@ -1,0 +1,128 @@
+<!----- créer le squlette de l'index -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/test.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+    </style>
+    <script src="/js/sticky.js" defer></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>StreetZine</title>
+</head>
+
+<body>
+    <img src="/images/fond.png" class="top" />
+    <nav class="navbar" id="nav-container">
+        <a class="navbar-brand" href="#">
+            <img src="/images/streetzine_logo.svg" alt="logo" style="width:130px;" />
+        </a>
+        <div id="nav-container-top"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="a_la_une.html">À la une</a> |
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nos_articles.html">Nos articles</a> |
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">Calendrier</a> |
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#a_propos">À propos</a>
+            </li>
+        </ul>
+
+        <div id="main-container"></div>
+    </nav>
+    <div class="contenu1">
+        <div class="une">
+            <h1>À la une</h1>
+            <div class="article_1">
+                <div class="img_article1" style="background-image: url('/images/fille.jpg');">
+                    <div class="img_fond1_around">
+                        <h5>Thème 1 : <br/><span style="text-transform: none">L'histoire du Street Art</span></h5>
+                    </div>
+                </div>
+                <h3 style="margin-top: 15px;">Qu'est-ce que le street art ?</h3>
+                <h4>Louise | 16 oct. 2021</h4>
+                <p>Le Street Art est un mouvement artistique contemporain qui s’est développé à la fin du siècle dernier. Il se définit comme l’art des endroits publics, celui qu’on retrouve dans nos rues, sur nos murs. Celui auquel on ne prête pas toujours
+                    attention, mais qui peut réserver de belles surprises. Il se présente sous diverses formes : graffiti, graffiti au pochoir, création d’affiches, pastel et même projection vidéo.
+                    <br/><br/>En français, on l’appelle “art de rue” ou “art urbain”. C’est un art instantané, rapide, interdit, dont le but est de faire passer un message, sans autorisation.<br/>Le Street Art peut être discret et occuper de très petits
+                    espaces (dessins, stickers) ou être monumental et très visible, comme, par exemple, des structures gonflables. Il s’agit principalement d’un art destiné au grand public, éphémère et en constant renouveau.
+                    <br/>Cette forme d’art va au-devant des gens sans qu’ils ne l’aient forcément souhaité. Elle permet de toucher des personnes qui n’entreraient pas dans un musée ou dans une galerie d’art. Les artistes de rues s’approprient l’espace
+                    urbain pour contester, bousculer, déranger, revendiquer, dénoncer, interroger, soutenir…
+                </p>
+            </div>
+            <button class="bouton_index">Lire plus</button>
+            <!-- <div class="article_1">Article 1 Deux</div>-->
+        </div>
+        <div class="lateral">
+            <h2>Plus d'articles</h2>
+            <div class="plus_article_1">
+                <!-- partial:index.partial.html -->
+                <div class="container">
+
+                    <div data-am-fadeshow="next-prev-navigation">
+
+                        <!-- Radio -->
+                        <input type="radio" name="css-fadeshow" id="slide-1" />
+                        <input type="radio" name="css-fadeshow" id="slide-2" />
+                        <input type="radio" name="css-fadeshow" id="slide-3" />
+                        <input type="radio" name="css-fadeshow" id="slide-4" />
+
+                        <!-- Slides -->
+                        <div class="fs-slides">
+                            <div class="fs-slide" style="background-image: url(https://www.telerama.fr/sites/tr_master/files/styles/simplecrop1000/public/medias/2014/09/media_117485/un-art-ephemere-bien-installe%2CM170953.jpg?itok=Ni0QAY-V);">
+                                <!-- Add content to images (sample) -->
+                                <div style="background-color: rgba(160, 128, 185, 0.8); width: 100%; height: 100%;">
+
+                                    <div class="content_image">
+                                        <h6>Les origines du street art</h6>
+                                        <p>Le street art, cet art de la rue qui colore les villes dans le monde entier, né à Philadelphie avec des mots d'amour et des pseudonymes écrit sur les murs. Connais une croissance fulgurante et ce place dans les
+                                            galeries d’art des différentes villes du monde. Le Street art n’est pas si récent que ça, le courant muraliste au Mexique voit naître de nombreuses peintures murales, lesquelles pourraient avoir influencé ...</p>
+                                        <button>Lire plus</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+                            <div class="fs-slide" style="background-image: url(https://images.unsplash.com/photo-1449057528837-7ca097b3520c?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=2500);"></div>
+                            <div class="fs-slide" style="background-image: url(https://www.wakou-magazine.com/wp-content/uploads/sites/8/2021/02/Carlos-Alberto.jpg);"></div>
+                        </div>
+
+                        <!-- Quick Navigation -->
+                        <div class="fs-quick-nav">
+                            <label class="fs-quick-btn" for="slide-1"></label>
+                            <label class="fs-quick-btn" for="slide-2"></label>
+                            <label class="fs-quick-btn" for="slide-3"></label>
+                            <label class="fs-quick-btn" for="slide-4"></label>
+                        </div>
+
+                        <!-- Prev Navigation -->
+                        <div class="fs-prev-nav">
+                            <label class="fs-prev-btn" for="slide-1"></label>
+                            <label class="fs-prev-btn" for="slide-2"></label>
+                            <label class="fs-prev-btn" for="slide-3"></label>
+                            <label class="fs-prev-btn" for="slide-4"></label>
+                        </div>
+
+                        <!-- Next Navigation -->
+                        <div class="fs-next-nav">
+                            <label class="fs-next-btn" for="slide-1"></label>
+                            <label class="fs-next-btn" for="slide-2"></label>
+                            <label class="fs-next-btn" for="slide-3"></label>
+                            <label class="fs-next-btn" for="slide-4"></label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- partial -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

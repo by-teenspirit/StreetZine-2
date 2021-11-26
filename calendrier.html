@@ -1,0 +1,124 @@
+<!----- créer le squlette de l'index -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/structure.css" />
+    <link rel="stylesheet" href="/calendrier.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+    </style>
+    <title>StreetZine</title>
+    <script src="calendrier.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar" style="top: 0;">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/streetzine_logo.svg" alt="logo" />
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nos_articles.html">Nos articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">Calendrier</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="all">
+        <div class="barreLaterale"><img src="/images/peindre.png" class="cal_img" />
+            <div class="cal_txt">Sélectionne un jour</div>
+        </div>
+        <div class="calendar" id="calendar-app">
+            <div class="calendar--day-view" id="day-view">
+                <span class="day-view-exit" id="day-view-exit">&times;</span>
+                <span class="day-view-date" id="day-view-date">MAI 29 2016</span>
+                <div class="day-view-content">
+                    <div class="day-highlight">
+                        Tu <span class="day-events" id="day-events">n'avais aucun évènement aujourd'hui</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Ajouter un nouvel évènement ?</span>
+                    </div>
+                    <div class="day-add-event" id="add-day-event-box" data-active="false">
+
+                        <div class="half">
+                            <label class="add-event-label">
+                     Nom de l'évènement
+                    <input type="text" class="add-event-edit add-event-edit--long" placeholder="Nouvel évènement" id="input-add-event-name">
+                   
+                  </label>
+                        </div>
+                        <div class="row">
+                            <div class="qtr">
+                                <label class="add-event-label">
+                Début
+                    <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                    <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
+                  </label>
+                            </div>
+                            <div class="qtr">
+                                <label class="add-event-label">
+                Fin
+                    <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                    <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
+                  </label></div>
+                        </div>
+                        <div class="half">
+                            <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">ajouter</a>
+                            <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">annuler</a>
+                        </div>
+
+
+                    </div>
+                    <div id="day-events-list" class="day-events-list">
+
+                    </div>
+                    <div class="day-inspiration-quote" id="inspirational-quote">
+                        Every child is an artist. The problem is how to remain an artist once he grows up. –Pablo Picasso
+                    </div>
+                </div>
+            </div>
+            <div class="calendar--view" id="calendar-view">
+                <div class="cview__month">
+                    <span class="cview__month-last" id="calendar-month-last">Avr</span>
+                    <span class="cview__month-current" id="calendar-month">Mai</span>
+                    <span class="cview__month-next" id="calendar-month-next">Juin</span>
+                </div>
+                <div class="cview__header">Dim</div>
+                <div class="cview__header">Lun</div>
+                <div class="cview__header">Mar</div>
+                <div class="cview__header">Mer</div>
+                <div class="cview__header">Jeu</div>
+                <div class="cview__header">Ven</div>
+                <div class="cview__header">Sam</div>
+                <div class="calendar--view" id="dates">
+                </div>
+            </div>
+            <div class="footer1">
+                <span><span id="footer-date" class="footer__link">Nous sommes le 30 Mai</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer" style="position: fixed; bottom: 0;">
+        <!-- Credits -->
+        <div class="footer-credits"><span style="font-weight: normal;">©</span> streetzine 2021</div>
+
+        <!-- Liens -->
+        <div class="footer-follow">
+            <div class="footer-txt">Suivez-nous sur</div>
+            <a class="footer-link" href="https://www.instagram.com/streetzine16/">
+                <img src="/images/logo_instagram_blanc.png" alt="logo" style="width:20px;" />
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>

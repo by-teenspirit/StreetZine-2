@@ -1,0 +1,193 @@
+<!----- créer le squlette de l'index -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/structure.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+    </style>
+    <script src="to-top.js" defer></script>
+    <script src="ancre.js" defer></script>
+    <script src="sticky.js" defer></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <title>StreetZine</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="/images/streetzine_logo.svg" alt="logo" />
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="nos_articles.html">Nos articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">Calendrier</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#a_propos">À propos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contenu1">
+        <div class="une">
+            <h1>À la une</h1>
+            <div class="article_1">
+                <div class="img_article1" style="background-image: url('/images/monsieur.jpg');">
+                    <div class="img_fond1_around">
+                        <h5>Thème 1 : <br/><span style="text-transform: none">L'histoire du Street Art</span></h5>
+                    </div>
+                </div>
+                <h3 style="margin-top: 15px;">Qu'est-ce que le street art ?</h3>
+                <h4>Louise | 16 oct. 2021</h4>
+                <p>Le Street Art est un mouvement artistique contemporain qui s’est développé à la fin du siècle dernier. Il se définit comme l’art des endroits publics, celui qu’on retrouve dans nos rues, sur nos murs. Celui auquel on ne prête pas toujours
+                    attention, mais qui peut réserver de belles surprises. Il se présente sous diverses formes : graffiti, graffiti au pochoir, création d’affiches, pastel et même projection vidéo.
+                    <br/><br/>En français, on l’appelle “art de rue” ou “art urbain”. C’est un art instantané, rapide, interdit, dont le but est de faire passer un message, sans autorisation.<br/>Le Street Art peut être discret et occuper de très petits
+                    espaces (dessins, stickers) ou être monumental et très visible, comme, par exemple, des structures gonflables. Il s’agit principalement d’un art destiné au grand public, éphémère et en constant renouveau.
+                    <br/>Cette forme d’art va au-devant des gens sans qu’ils ne l’aient forcément souhaité. Elle permet de toucher des personnes qui n’entreraient pas dans un musée ou dans une galerie d’art. Les artistes de rues s’approprient l’espace
+                    urbain pour contester, bousculer, déranger, revendiquer, dénoncer, interroger, soutenir…
+                </p>
+            </div>
+            <a href="/quest_ce_que_le_street_art.html"><button class="bouton_index">Lire plus</button></a>
+            <!-- <div class="article_1">Article 1 Deux</div>-->
+        </div>
+        <div class="lateral">
+            <a href="nos_articles.html">
+                <h2>Plus d'articles</h2>
+            </a>
+            <div class="plus_article_1">
+                <!-- partial:index.partial.html -->
+                <div class="container">
+
+                    <div data-am-fadeshow="next-prev-navigation">
+
+                        <!-- Radio -->
+                        <input type="radio" name="css-fadeshow" id="slide-1" />
+                        <input type="radio" name="css-fadeshow" id="slide-2" />
+                        <input type="radio" name="css-fadeshow" id="slide-3" />
+                        <input type="radio" name="css-fadeshow" id="slide-4" />
+
+                        <!-- Slides -->
+                        <div class="fs-slides">
+
+                            <div class="fs-slide" style="background-image: url(https://www.saintmartindheres.fr/smh_sitep/wp-content/uploads/Viktoria.jpg);">
+                                <!-- Add content to images (sample) -->
+                                <div style="background-color: rgba(160, 128, 185, 0.8); width: 100%; height: 100%;">
+
+                                    <div class="content_image">
+                                        <h6>Les origines du street art</h6>
+                                        <p>Le street art, cet art de la rue qui colore les villes dans le monde entier, né à Philadelphie avec des mots d'amour et des pseudonymes écrit sur les murs. Connais une croissance fulgurante et ce place dans les
+                                            galeries d’art des différentes villes du monde. Le Street art n’est pas si récent que ça, le courant muraliste au Mexique voit naître de nombreuses peintures murales ...
+                                        </p>
+                                        <button style="z-index: 98;"><a href="origines.html" style="color: white;">Lire plus</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-slide" style="background-image: url(https://img.20mn.fr/U7hhSUkXTQuwQUHfNL0LVA/830x532_two-men-are-sitting-in-front-of-a-famous-graffiti-of-british-street-artist-banksy-painted-on-a-wall.jpg);">
+                                <!-- Add content to images (sample) -->
+                                <div style="background-color: rgba(160, 128, 185, 0.8); width: 100%; height: 100%;">
+
+                                    <div class="content_image">
+                                        <h6>Banksy</h6>
+                                        <p>Banksy est un artiste de street art qui travaille sous pseudonyme. Son véritable nom et son identité exacte sont inconnus et font toujours l'objet de spéculations. Apparemment britannique et actif depuis les années
+                                            1990, il utilise la peinture au pochoir pour faire passer ses messages, qui mêlent souvent politique, humour et poésie. Ses œuvres sont des images humoristiques, parfois combinées à des slogans. Le message est
+                                            généralement anarchiste ...
+                                        </p>
+                                        <button style="z-index: 98;"><a href="banksy.html" style="color: white;">Lire plus</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-slide" style="background-image: url(/images/melbourne.jpg);">
+                                <!-- Add content to images (sample) -->
+                                <div style="background-color: rgba(160, 128, 185, 0.8); width: 100%; height: 100%;">
+
+                                    <div class="content_image">
+                                        <h6>Le Street Art à Melbourne</h6>
+                                        <p>Si vous prévoyez de voyager en Australie, alors n’hésitez pas à passer à Melbourne, Capitale du Street Art en Australie, découvrez son street art et ses nombreux tags sera un arrêt incontournable ! <br> Melbourne
+                                            offre de nombreux endroits en plein centre où le street art est à l’honneur et approuvé par la ville elle-même. Le street art à Melbourne est en effet très développé et fait partie ...</p>
+                                        <button style="z-index: 98;"><a href="melbourne.html" style="color: white;">Lire plus</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-slide" style="background-image: url(https://itinerrance.fr/app/uploads/2019/05/head-fresques-boulevard-paris-13.jpg);">
+                                <!-- Add content to images (sample) -->
+                                <div style="background-color: rgba(160, 128, 185, 0.8); width: 100%; height: 100%;">
+
+                                    <div class="content_image">
+                                        <h6>Boulevard Paris 13</h6>
+                                        <p>Si vous vous êtes déjà baladé dans le 13e arrondissement de Paris ou que vous avez pris la ligne 6, entre quai de la gare et place d’Italie, vous avez sûrement dû voir des grandes fresques sur des bâtiments. C’est
+                                            le Boulevard Paris 13, un musée sur le street art en plein air. Autrefois le 13e arrondissement était gris, le quartier était peu flatteur. Elle s’est complètement métamorphosée et met ses tours en valeur ...
+                                        </p>
+                                        <button style="z-index: 98;"><a href="boulevard_paris_13.html" style="color: white;">Lire plus</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Navigation -->
+                        <div class="fs-quick-nav">
+                            <label class="fs-quick-btn" for="slide-1"></label>
+                            <label class="fs-quick-btn" for="slide-2"></label>
+                            <label class="fs-quick-btn" for="slide-3"></label>
+                            <label class="fs-quick-btn" for="slide-4"></label>
+                        </div>
+
+                        <!-- Prev Navigation -->
+                        <div class="fs-prev-nav">
+                            <label class="fs-prev-btn" for="slide-1"></label>
+                            <label class="fs-prev-btn" for="slide-2"></label>
+                            <label class="fs-prev-btn" for="slide-3"></label>
+                            <label class="fs-prev-btn" for="slide-4"></label>
+                        </div>
+
+                        <!-- Next Navigation -->
+                        <div class="fs-next-nav">
+                            <label class="fs-next-btn" for="slide-1"></label>
+                            <label class="fs-next-btn" for="slide-2"></label>
+                            <label class="fs-next-btn" for="slide-3"></label>
+                            <label class="fs-next-btn" for="slide-4"></label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- partial -->
+            </div>
+        </div>
+    </div>
+    <div class="a_propos" id="a_propos">
+        <div class="a_propos_title">À propos</div>
+        <div class="a_propos_container">
+            <p><strong>StreetZine, c'est quoi ?</strong>
+                <br/>StreetZine, c'est un magazine en ligne, spécialisé dans le street art, créé par 5 étudiants en Webdesign.
+                <br/>Reconnu par les artistes et les galeries, StreetZine est le parfait trait d’union entre la création, les amoureux du StreetArt et les collectionneurs.</p>
+            <img src="/images/a_propos.png" />
+        </div>
+    </div>
+    <div id="scrollUp">
+        <a href="#top"><img src="/images/to_top.png" /></a>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+        <!-- Credits -->
+        <div class="footer-credits"><span style="font-weight: normal;">©</span> streetzine 2021</div>
+
+        <!-- Liens -->
+        <div class="footer-follow">
+            <div class="footer-txt">Suivez-nous sur</div>
+            <a class="footer-link" href="https://www.instagram.com/streetzine16/">
+                <img src="/images/logo_instagram_blanc.png" alt="logo" style="width:20px;" />
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>
